@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/speakenglishbutton"
+            android:layout_width="126dp"
+            android:text="DoyouSpeakEnglish"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            android:tag="doyouspeakenglish"
+            android:onClick="playPhrase"/>
+        <Button
+            android:id="@+id/goodeveningbutton"
+            android:text="Good evening"
+            android:tag="goodevening"
+            app:layout_gravity= "fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:onClick="playPhrase"/>
+        <Button
+            android:id="@+id/hellobutton"
+            android:text="Hello"
+            android:tag="hello"
+            app:layout_gravity= "fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:onClick="playPhrase"
+            />
+        <Button
+            android:id="@+id/howareyoubutton"
+            android:text="How are you!"
+            android:tag="howareyou"
+            app:layout_gravity= "fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:onClick="playPhrase"/>
+        <Button
+            android:id="@+id/Mynameisbutton"
+            android:text="My name is "
+            android:tag="mynameis"
+            app:layout_gravity= "fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:onClick="playPhrase"/>
+        <Button
+            android:id="@+id/pleasebutton"
+            android:text="Please"
+            android:tag="please"
+            app:layout_gravity= "fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:onClick="playPhrase"/>
+        <Button
+            android:id="@+id/welcomebutton"
+            android:text="welcome"
+            android:tag="welcome"
+            app:layout_gravity= "fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:onClick="playPhrase"/>
+        <Button
+            android:id="@+id/liveinbutton"
+            android:text="i ilivein"
+            android:tag="ilivein"
+            app:layout_gravity= "fill"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:onClick="playPhrase"/>
+
+    </android.support.v7.widget.GridLayout>
+
+</android.support.constraint.ConstraintLayout>
